@@ -1,8 +1,4 @@
-p {
-  color: black;
-  text-align: left;
-}
-bd {
+emph {
   color: black;
   font-weight: bold;
 }
@@ -10,4 +6,34 @@ bd {
 a {
   color: red;
   text-decoration-line: underline;
+}
+
+body {
+  background-color: antiquewhite;
+}
+
+div {
+  background-color: darkslategray;
+}
+
+h1 {
+  text-align: center;
+}
+
+@keyframes rainbow {
+      0% {color: #ec8dab;}
+      12.5% {color: #ee956d;}
+      25% {color: #ccab4b;}
+      37.5% {color: #8dc071;}
+      50% {color: #3ec7b1;}
+      62.5% {color: #46bee8;}
+      75% {color: #91aafb;}
+      87.5% {color: #cb97e3}
+      100% {color: #ec8dab;}
+}
+
+r {
+  animation-name: rainbow;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
 }
