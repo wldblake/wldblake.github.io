@@ -5,12 +5,54 @@
     <title>Copy Writing</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=1"/>
     <link rel="stylesheet" href="../styles/default.css"/>
-    <link rel="icon" sizes="64x64" type="image/ico" href="assets/surprise.ico"/>
+    <link rel="icon" sizes="64x64" type="image/ico" href="../assets/surprise.ico"/>
   </head>
   <body>
     <h1>Copy Writing Portfolio</h1>
     <div style="text-align:center;">
-      <div style="width:200px; height:30px; text-align:center; margin: 0 auto;"><h4><r>"From my brain to yours"</r></h4></div>
+      <div style="width:200px; text-align:center; margin: 0 auto;"><h4><r>"From my brain to yours"</r></h4></div>
     </div>
+    <ul>
+      <!--List item template
+      <li><button type="button" class="collapsible">
+        <ul style="display:flex;">
+          <li>name</li>
+          <li style="text-align: end;"><em>date</em></li>
+        </ul>
+        </button>
+        <div class="content">content</div>
+      </li>-->
+
+      <li><button type="button" class="collapsible">
+        <ul style="display:flex;">
+          <li>[SPEC] Who Gives a Crap</li>
+          <li style="text-align: end;"><em>12/11/2026</em></li>
+        </ul>
+        </button>
+        <div class="content">Who Gives a Crap includes a fun little message on their toilet roll packaging. This is a speculative bit of copy written as if for one their rolls.<br/><!--Save the Turdles! <br/>
+          Over 200 billion turds are left homeless each year. Bushes, gutters, rivers; these are no place for a lonely richard. That's why we donate 50% of our profits to help provide toilets to those in need. Oh, and this plastic-free package is pretty good for turtles too.
+        -->
+        </div>
+      </li>
+    </ul>
+
+    <script>
+    var coll = document.getElementsByClassName("collapsible");
+    var i;
+
+    for (i = 0; i < coll.length; i++) {
+      coll[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var content = this.nextElementSibling;
+        if (content.style.display === "block") {
+          content.style.display = "none";
+        } else {
+          content.style.display = "block";
+        }
+      });
+    }
+
+    </script>
+
   </body>
 </html>
