@@ -3,6 +3,7 @@ a {
   color: red;
   text-decoration-line: underline;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 90%;
 }
 
 /*text formatting*/
@@ -17,6 +18,7 @@ body {
 
 p {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 90%;
 }
 
 h1 {
